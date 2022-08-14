@@ -1,0 +1,83 @@
+/*Footer*/
+.footer {
+    display: block;
+    background-color: $background-color-footer;
+    height: 252px;
+
+    &__style {
+        display: flex;
+        flex-direction: row;
+    }
+    &__logo {
+        padding-top: 60px;
+        margin-bottom: 20px;
+
+        &--decor {
+            color: $font-color-white;
+        }
+    }
+    &__address {
+        margin-left: 215px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: $letter-spacing-one;
+    }
+    &__address-place {
+        color: $font-color-white;
+    }
+    &__address-link {
+        color: $font-footer-address-link;
+
+        &:hover,:focus{
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            color: $font-color-menu-hover;
+        }
+    }
+    &__item-address{
+        &:nth-child(2) {
+        margin-top: 9px;
+        margin-bottom: 9px;
+        letter-spacing: $letter-spacing-one;
+        }
+    }
+    &__join-us {
+        padding-top: 72px;
+        padding-left: 70px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $font-color-white;
+    }
+    &__socials-ico {
+        width: 20px;
+        height: 20px;
+    }
+    &__socials-box {
+        padding-left: 70px;
+        padding-top: 20px;
+    }
+    &__icons-socials-grid {
+        display: flex;
+    }
+    &__icons-socials-item {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        fill: $icon-fill-color;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: rgba(100%, 100%, 100%, 10%);
+
+        &:hover, :focus{
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #2196f3;
+            cursor: pointer;
+        }
+    }
+}

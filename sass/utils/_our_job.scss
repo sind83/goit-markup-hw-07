@@ -1,0 +1,30 @@
+/*Styling box "czym się zajmujemy"*/
+
+.container--box-column {
+    flex-direction: column;
+    margin-bottom: 94px;
+}
+.picture-box {
+    display: flex;
+    justify-content: center;
+    
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: $letter-spacing-one;
+        color: $font-color-headers;
+        margin-bottom: 50px;
+    }
+
+    &__picture {
+        max-width: 370px;
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

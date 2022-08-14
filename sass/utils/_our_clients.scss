@@ -1,0 +1,48 @@
+/* Our clients / Nasi klienci */
+.our-clients {
+    flex-direction: column;
+    align-items: center;
+    
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        color: $font-color-headers;
+        line-height: 1.38;
+        letter-spacing: $letter-spacing-one;
+        padding-bottom: 50px;
+    }
+
+    &__items {
+        fill: $icon-base-color;
+    }
+    
+    &__item {
+        display: inline-flex;
+        justify-items: center;
+        border: 1px solid $icon-base-color;
+        border-radius: 4px;
+        padding: 14px 25px;
+
+        &:hover, &:focus{
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            fill: $icon-backgroud-color;
+            border-color: $icon-backgroud-color;
+            cursor: pointer;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    &__box {
+        display: flex;
+        width: 1200px;
+        justify-content: space-around;
+    }
+
+    &__logo {
+        max-width: 106px;
+        height: 60px;
+    }
+}
+/* $$- END Our Clients / Nasi klienci$$- */
